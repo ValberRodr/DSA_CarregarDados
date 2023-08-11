@@ -36,7 +36,7 @@ system.time(df_teste1 <- read.csv2("TemperaturasGlobais/TemperaturasGlobais.csv"
 # Usando read.table()
 system.time(df_teste2 <- read.table("TemperaturasGlobais/TemperaturasGlobais.csv"))
 
-# Usando fread()
+# Usando fread() Muito mais eficiente
 ?fread
 system.time(df <- fread("TemperaturasGlobais/TemperaturasGlobais.csv"))
 
